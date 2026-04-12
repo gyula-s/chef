@@ -1,20 +1,5 @@
 # 🍴 The Master Food List
 
-> [!IMPORTANT]
-> **LLM Menu Generation Prompt:**
-> When asked to generate a menu (ideally for a **Rolling 2-Week Period**), follow these rules:
-> 1. **Standalone Meals:** Every soup or main dish is a standalone meal for the day. Do not pair 1st and 2nd courses.
-> 2. **Sides Logic:** If a dish doesn't explicitly include a side (e.g., Pörkölt, Rántotthús, Fasírt), pick one from the **Koretek (Sides)** list.
-> 3. **Leftover/Freezer Strategy:** Respect `2+ days` tags. For a 2-week plan, suggest freezing half of a large batch from Week 1 to be used as a "zero-effort" meal in Week 2.
-> 4. **Surplus & Ingredient Cascading:** 
->    - Prioritize the **Current Freezer / Pantry Surplus**.
->    - Look for **Ingredient Synergies**: If Week 1 uses half a cabbage or a large bag of potatoes, ensure Week 2 has a dish that uses the rest.
-> 5. **Time Management:**
->    - **Weekdays:** Prep < 60 min.
->    - **Weekends:** Time-intensive meals. Suggest a `[Make Ahead]` session on Sunday to prep for the coming week's busiest days.
-> 6. **Two-Phase Shopping:** Generate **two separate shopping lists** (Week 1 and Week 2). Week 1 should include any bulk/pantry items needed for the whole period, while Week 2 focuses on fresh replenishment.
-> 7. **Variety:** Ensure a mix of Meat, Veggie, and Soup days across the 14 days.
-
 ## **❄️ Current Freezer / Pantry Surplus**
 *Items listed here should be prioritized in the next menu generation:*
 * **Bacon** (lots)
