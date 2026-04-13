@@ -19,9 +19,8 @@ When asked to generate a menu, follow these rules:
 - **Generate a menu for a Rolling 2-Week Period.**
 - **Leftover Optimization:** Respect `2+ days` tags.
 - **Leftover Safety Rule:** Never schedule a leftover more than 3 days after it was cooked (e.g., a Monday meal can be eaten on Tuesday or Wednesday, but not after). 
-- **Freezing for Week 2:** If you want to use a Week 1 batch in Week 2, you **must** explicitly instruct to "Freeze half for Week 2" in the Week 1 plan.
-- **Continuity:** Week 2 **must** explicitly list any meals saved or frozen from Week 1 (e.g., *"Tuesday: [Frozen from Week 1] Lasagna"*).
-- **Ingredient Cascading:** Look for synergies. If Week 1 uses half a cabbage or a large bag of potatoes, ensure Week 2 has a dish that uses the rest.
+- **Freshness Preference:** Do not suggest freezing cooked meals for later weeks. All leftovers should be consumed within their safety window in the same week they were prepared.
+- **Ingredient Cascading:** Look for synergies in raw ingredients. If Week 1 uses half a cabbage or a large bag of potatoes, ensure Week 2 has a dish that uses the rest.
 
 ### 3. Surplus & Prioritization
 - Always prioritize items listed in the **❄️ Current Freezer / Pantry Surplus** section of `FOOD_LIST.md` (e.g., Bacon, Sausages).
@@ -29,7 +28,7 @@ When asked to generate a menu, follow these rules:
 ### 4. Time Management
 - **Weekdays:** Prioritize meals with `Prep: < 60 min`.
 - **Weekends:** Include more time-intensive meals.
-- **Thinking Ahead:** Identify `[Make Ahead]` items. On weekends, suggest a prep session to prepare a meal for a busy weekday.
+- **Thinking Ahead:** Identify `[Make Ahead]` items. On weekends, suggest a prep session to prepare a meal for the coming week's busiest days.
 
 ### 5. Two-Phase Shopping Lists
 Generate **two separate shopping lists** (Week 1 and Week 2):
