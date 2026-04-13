@@ -9,28 +9,32 @@ This skill automates family meal planning and shopping list generation based on 
 
 ## 📋 Core Workflow
 
-When asked to generate a menu, follow these rules:
+This is a **two-phase process**. Always start with Phase 1.
 
-### 1. Standalone Meals & Sides
+### Phase 1: Menu Proposal (Initial Request)
+When asked to generate a menu, provide ONLY the 2-week plan. Follow these rules:
+
+**1. Standalone Meals & Sides**
 - Every soup or main dish is a standalone meal for the day. Do not pair 1st and 2nd courses.
 - If a dish doesn't explicitly include a side (e.g., Pörkölt, Rántotthús, Fasírt), pick one appropriate side from the **Koretek (Sides)** section of `FOOD_LIST.md`.
 
-### 2. Rolling 2-Week Strategy & Food Safety
+**2. Strategy & Safety**
 - **Generate a menu for a Rolling 2-Week Period.**
 - **Leftover Optimization:** Respect `2+ days` tags.
-- **Leftover Safety Rule:** Never schedule a leftover more than 3 days after it was cooked (e.g., a Monday meal can be eaten on Tuesday or Wednesday, but not after). 
-- **Freshness Preference:** Do not suggest freezing cooked meals for later weeks. All leftovers should be consumed within their safety window in the same week they were prepared.
-- **Ingredient Cascading:** Look for synergies in raw ingredients. If Week 1 uses half a cabbage or a large bag of potatoes, ensure Week 2 has a dish that uses the rest.
+- **STRICT NO-FREEZE POLICY:** Never suggest freezing cooked meals. All leftovers must be fridge-stored and consumed within 3 days of cooking.
+- **Surplus:** Prioritize RAW items from the **❄️ Current Freezer / Pantry Surplus**.
+- **Time:** Weekdays < 60 min prep. Weekends can be intensive.
 
-### 3. Surplus & Prioritization
-- Always prioritize items listed in the **❄️ Current Freezer / Pantry Surplus** section of `FOOD_LIST.md` (e.g., Bacon, Sausages).
+**3. Interaction Style**
+- Present the 2-week menu clearly.
+- **At the end of the proposal, ask for the user's approval.** Do not generate shopping lists yet.
 
-### 4. Time Management
-- **Weekdays:** Prioritize meals with `Prep: < 60 min`.
-- **Weekends:** Include more time-intensive meals.
-- **Thinking Ahead:** Identify `[Make Ahead]` items. On weekends, suggest a prep session to prepare a meal for the coming week's busiest days.
+---
 
-### 5. Two-Phase Shopping Lists
+### Phase 2: Shopping List Generation (After Approval)
+ONLY once the user has approved the menu or explicitly requested the shopping lists:
+
+**1. Two-Phase Shopping Lists**
 Generate **two separate shopping lists** (Week 1 and Week 2):
 - **Week 1:** Include bulk/pantry items needed for the whole period + fresh items for Week 1.
 - **Week 2:** Focus on fresh replenishment and ingredients needed for Week 2 dishes.
