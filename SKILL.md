@@ -15,13 +15,17 @@ This is a **two-phase process**. Always start with Phase 1.
 When asked to generate a menu, provide ONLY the 2-week plan. Follow these rules:
 
 **1. Standalone Meals & Sides**
-- Every soup or main dish is a standalone meal for the day. Do not pair 1st and 2nd courses.
-- If a dish doesn't explicitly include a side (e.g., Pörkölt, Rántotthús, Fasírt), pick one appropriate side from the **Koretek (Sides)** section of `FOOD_LIST.md`.
+- **Strictly follow the tags in FOOD_LIST.md:**
+  - If a dish is marked `[Standalone]`, do NOT suggest a side.
+  - If a dish is marked `[Needs Side]`, pick exactly one appropriate side from the **Koretek (Sides)** section.
+  - Pay attention to specific side recommendations (e.g., `[Needs Side: Rice]`).
 
 **2. Strategy & Safety**
 - **Generate a menu for a Rolling 2-Week Period.**
 - **Leftover Optimization:** Respect `2+ days` tags.
-- **STRICT NO-FREEZE POLICY:** Never suggest freezing cooked meals. All leftovers must be fridge-stored and consumed within 3 days of cooking.
+- **FREEZING POLICY:**
+  - **Only** suggest freezing if a dish is explicitly marked `[Freezable: Yes]`.
+  - If a dish is marked `[Freezable: No]`, all leftovers must be stored in the fridge and consumed within 3 days.
 - **Surplus:** Prioritize RAW items from the **❄️ Current Freezer / Pantry Surplus**.
 - **Time:** Weekdays < 60 min prep. Weekends can be intensive.
 
